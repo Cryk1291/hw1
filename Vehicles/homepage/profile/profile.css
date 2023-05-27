@@ -1,0 +1,273 @@
+#profile_head_section{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(0, 26, 48);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#profile_photo{
+    border-radius: 100%;
+    margin: 30px;
+    height: 200px;
+    width: 200px;
+}
+#cross_close_modal{
+    position: relative;
+    cursor: pointer;
+    left: 565px;
+    bottom: 175px;
+    height: 20px;
+    width: 20px;
+}
+
+#profile_description_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    color: white;
+    border-left: 1px solid rgb(61, 61, 61);
+    font-family: sans-serif;
+    height: 100%;
+}
+h1{
+    font-weight:900;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.profile_image_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature{
+    margin: 5px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.profile_photo{
+    border-radius: 100%;
+}
+
+.profile_feature{
+    font-weight: 100;
+}
+
+#photo_container_modal{
+    background-color: rgba(0, 0, 0, 0.705);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-top: 80px;
+    height: 100%;
+    width: 100%;
+}
+
+#exit_account{
+    background-color: rgb(127, 6, 6);
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.upload_photo{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_photo_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 600px;
+    border: 8px solid rgb(0, 41, 81);
+    background-color: rgb(0, 57, 106);
+    
+}
+
+#modal_image_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 55%;
+}
+
+#photo_selection_form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#cambia_immagine{
+    margin-top: 40px;
+    height: 50px;
+    cursor: pointer;
+    border: 4px solid rgb(0, 41, 81);
+}
+
+#selection_photo{
+    border: 4px solid yellow;
+    margin: 0px;
+    height: 300px;
+    width: 300px;
+}
+
+.error_box_container{
+    margin-top: 10px;
+    height: fit-content;
+    width: 100%;
+    background-color: crimson;
+}
+
+.error_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    line-height: 30px;
+}
+
+
+/******************************************** FAVOURITE SECTION *****************************************/
+
+#FavouriteListIntroduction{
+    width: 100%;
+    height: 80px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    margin: 0px;
+
+    display: flex;
+    align-items: center;
+    background-color: rgb(127, 6, 6);
+    box-shadow: inset 0px -10px 100px rgb(34, 0, 88);
+    color: white;
+}
+#car_title_span{
+    margin-left: 20px;
+}
+
+#container_favourites_list{
+    height: 100%;
+    width: 100%;
+}
+.container_favourite_element{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    width: calc(100% - 80px);
+    margin: 20px;
+    padding: 20px;
+
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 4px 4px 20px gray;
+    cursor: pointer;
+}
+
+h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.favourite_image{
+    object-fit: cover;
+    height: 200px;
+    width: 250px;
+}
+#bike .favourite_image{
+    object-fit: contain;
+    height: 200px;
+    width: 250px;
+}
+#bike{
+    cursor: default;
+}
+
+.heart{
+    cursor: pointer;
+    margin-top: 30;
+    height: 40px;
+    width: 40px;
+}
+
+.title_description_container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.span_title{
+    font-weight: bold;
+    font-family: sans-serif
+}
+
+.span_descrition{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+@media (max-width: 870px){
+    #FavouriteListIntroduction{
+        font-size: 36px;
+    }
+
+    #profile_head_section{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .profile_image_container{
+        width: 100%
+    }
+    #profile_description_container{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .container_favourite_element{
+        flex-direction: column;
+    }
+
+    #form_photo_container{
+        width:400px;
+        height: 300px;
+    }
+
+    #selection_photo{
+        width: 150px;
+        height: 150px;
+        margin-right: 10px;
+    }
+
+    #cambia_immagine{
+        width: fit-content;
+    }
+
+}

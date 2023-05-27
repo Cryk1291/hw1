@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <script src="../header.js" defer="true"></script>
+        <script src="profile.js" defer="true"></script>
+        <link rel="stylesheet" href= "../homepage_header.css"/>
+        <link rel="stylesheet" href= "profile.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="http://localhost/Vehicles/homepage/images/gear_black.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Profile</title>
+    </head>
+    
+    <body>
+        <div id="photo_container_modal" class = "disappear">
+            <div class="upload_photo">
+                <div id = form_photo_container>
+                    <img id = "cross_close_modal" src = "../images/cross.png"> 
+                    <div id="modal_image_container">
+                        <img id="selection_photo">
+                    </div>
+                    <div id = photo_selection_form>
+                        <h2>Cambia immagine</h2>
+                        <form name= 'upload' enctype="multipart/form-data">
+                            <div id="upload"><div class="file_name">Seleziona un file...</div><div class="file_size"></div></div>
+                            <input type='file' name='avatar' accept='.jpg, .jpeg, image/gif, image/png' id="upload_original">
+                            <br>
+                            <div class="error_box_container disappear">
+                                <div class = 'error_box'>
+                                    <span id = "error_message"></span>
+                                </div>
+                            </div>
+                        </form>
+                        <button id="cambia_immagine">Cambia immagine</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+            <div id = 'container'>
+                
+                <div id = 'header' >
+                    <div id="menu" name="selection_menu">
+                        <a href="../homepage.html">
+                            <div id="header_home" class ='header selection'>Homepage</div>
+                        </a>
+                        <a href="http://localhost/Vehicles/homepage/motorbike/motorbike.html">
+                            <div id="header_motorbike" class ='header selection'>Motorbike</div>
+                        </a>
+                    </div>
+                    <img src="../images/logo.png" id = "logo">
+                    <div id="profile_setting_selection">
+                        <div id="header_profile" class ='header selection'> 
+                                <name></name>
+                                <div id="header_profile_access" class="disappear"></div>
+                            </div>
+                        
+                        <img src = "../images/gear_white.png" id="gear_black" class = "gear_image">
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="profile_section_container">
+                    <div id ="profile_head_section">
+                        <div class = 'profile_image_container'>
+                        <img src = "./assets/profile.png" id="profile_photo" class="profile_photo">
+                        <button class ='login_register_button' id="change_image">Cambia immagine</button>
+                        
+                        
+                    </div>
+                        <div id ="profile_description_container">
+                            <h1></h1>
+                            <span class = "feature">Nome: <span id = "feature_nome"></span></span>
+                            <span class = "feature">Cognome: <span id = "feature_cognome"></span></span>
+                            <span class = "feature">Indirizzo Mail: <span id = "feature_mail"></span></span>
+                            <button class ='login_register_button' id="exit_account">Esci dall'account</button>
+                        </div>
+                    </div> 
+                </div>
+
+                <div id = 'container_favourite_list'>
+                    <h1 id= 'FavouriteListIntroduction'><span id='car_title_span'>Lista preferiti:</span></h1>
+                    </div>
+            </div>
+            <div id="gear_setting_container" class="close disappear" >
+                <div class = "gear_menu_element" id="gear_night_shift_element">
+                    <span>Dark Mode: </span>
+                    <div id="night_shift" class="OFF">
+                        <div id="night_shift_lever"></div>
+                    </div>
+                </div>
+                <a href="http://localhost/Vehicles/homepage/profile/profile.html">
+                    <div class = "gear_menu_element" id="gear_profile_element">
+                        <span>Profile: </span>
+                        <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+                    </div>
+                </a>
+                <a href="http://localhost/Vehicles/login/login.html">
+                    <div class = "gear_menu_element" id="gear_login_element">
+                        <span>Login: </span>
+                        <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+                    </div>
+                </a>
+                <a href="http://localhost/Vehicles/register/register.html">
+                    <div class = "gear_menu_element" id="gear_register_element">
+                        <span>Register: </span>
+                        <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+                    </div>
+                </a>
+                <a href="http://localhost/Vehicles/homepage/homepage.html">
+                    <div class = "gear_menu_element" id="gear_homepage_element">
+                        <span>Homepage: </span>
+                        <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+                    </div>
+                </a>
+                <a href="http://localhost/Vehicles/homepage/motorbike/motorbike.html">
+                    <div class = "gear_menu_element" id="gear_motorbike_element">
+                        <span>Motorbike: </span>
+                        <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+                    </div>
+                </a>
+            </div>
+</body>
+</html>

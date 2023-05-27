@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <script src="../header.js" defer="true"></script>
+        <script src="motorbike.js" defer="true"></script>
+        <link rel="stylesheet" href= "../homepage_header.css"/>
+        <link rel="stylesheet" href= "motorbike.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="http://localhost/Vehicles/homepage/images/motocycle.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Motorbike</title>
+    </head>
+
+    <body>
+        <div id = 'container'>
+            <!-- RIEMPIRE TUTTO QUA  E COMPILARE TUTTO "api_rest1.js"-->
+            <div id = 'header' onclick= 'window.location= "#not_clicked"' >
+                <div id="menu" name="selection_menu">
+                    <a href="http://localhost/Vehicles/homepage/homepage.html">
+                        <div id="header_home" class ='header selection'>Homepage</div>
+                    </a>
+                    <a href="http://localhost/Vehicles/homepage/motorbike/motorbike.html">
+                        <div id="header_motorbike" class ='header selection'>Motorbike</div>
+                    </a>
+                </div>
+                <img src="../images/logo.png" id = "logo">
+                <div id="profile_setting_selection">
+                    <div id="header_profile" class ='header selection'> 
+                            <name></name>
+                            <div id="header_profile_access" class="disappear"></div>
+                        </div>
+                    <img src = "../images/gear_white.png" id="gear_black" class = "gear_image">
+                </div>
+            </div>
+
+            <div id =every_container>
+                <div id = 'search_container'>
+                    <span class="Header">Cerca qui' il veicolo: </span>
+                    <form method = "post"  name = "vehicle_search" id = 'vehicle_search'>
+                        <label id="label_ricerca"><input type="text" class = "ricerca" id="vehicles_make" name="vehicles_make" placeholder="Cerca la marca..."></input></label>
+                        <label id="label_ricerca"><input type="text" class = "ricerca" id="vehicles_model" name="vehicles_model" placeholder="Cerca il modello (opzionale)"></input></label>
+                        <label id="label_ricerca"><input type="text" class = "ricerca" id="vehicles_year" name="vehicles_year" placeholder="Inserisci l'anno (opzionale)"></input></label>
+                        <label id="label_search_button"><input type="submit" id="search_button" value="Cerca"></input></label>
+                    </form>
+                    <div class="error_message_container"><div id="error_message">Effettuare il Login per procedere!</div></div>
+                </div>
+                <div id = 'bikes_search_container'>
+                    <div id = 'search_bar'><input id="ricerca_button"  placeholder="Filtra per nome"></div>
+                    <div id =bikes_container></div>
+                </div>
+            </div>
+            
+            
+        </div>
+            <div id="gear_setting_container" class="close disappear" >
+                <div class = "gear_menu_element" id="gear_night_shift_element">
+                    <span>Dark Mode: </span>
+                    <div id="night_shift" class="OFF">
+                        <div id="night_shift_lever"></div>
+                    </div>
+                </div>
+                <a href="http://localhost/Vehicles/homepage/profile/profile.html">
+                    <div class = "gear_menu_element" id="gear_profile_element">
+                        <span>Profile: </span>
+                        <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+                    </div>
+                </a>
+                <a href="http://localhost/Vehicles/login/login.html">
+                    <div class = "gear_menu_element" id="gear_login_element">
+                        <span>Login: </span>
+                        <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+                    </div>
+                </a>
+                <a href="http://localhost/Vehicles/register/register.html">
+                    <div class = "gear_menu_element" id="gear_register_element">
+                        <span>Register: </span>
+                        <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+                    </div>
+                </a>
+                <a href="http://localhost/Vehicles/homepage/homepage.html">
+                    <div class = "gear_menu_element" id="gear_homepage_element">
+                        <span>Homepage: </span>
+                        <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+                    </div>
+                </a>
+                <a href="http://localhost/Vehicles/homepage/motorbike/motorbike.html">
+                    <div class = "gear_menu_element" id="gear_motorbike_element">
+                        <span>Motorbike: </span>
+                        <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

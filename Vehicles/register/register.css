@@ -1,0 +1,210 @@
+body{
+    background-color: rgb(0, 78, 146);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 500px;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 4px 4px gray;
+}
+form{
+    width: 80%;
+}
+
+div{
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 100px;
+}
+
+.invisible{
+    display: none;
+}
+
+#label_button{
+    display:flex;
+    width: 100%;
+}
+
+input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+#username_tag, #email_tag, #password_tag{
+    width: fit-content
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 6px;
+}
+
+
+#error_message{
+    color: red;
+}
+
+.error_code_box{
+    height: 40px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 12;
+    background-color:crimson;
+    border-radius: 2px;
+    margin: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.check_code_box{
+    height: fit-content;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 14;
+    background-color:green;
+    margin-left: 6px;
+    border-radius: 2px;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+.check_code_box_content{
+    width: 100%;
+    margin: 2px;
+}
+
+
+#button{
+    height: 60px;
+    width: 100%;
+    border-radius: 4px;
+    color: white;
+    border: 0px;
+    font-weight:600;
+    font-size: 16px;
+    background-color: rgb(0, 78, 146);
+    justify-content: flex-end;
+}
+#button:hover{
+    background-color: rgb(0, 108, 202);
+}
+
+
+#night_shift{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 20px;
+    right: 20px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid rgb(0, 104, 145);
+    height: 40px;
+    width:  80px;
+}
+
+#night_shift:hover{
+    cursor: pointer;
+}
+
+#night_shift_lever{
+    background-color: gray;
+    transform: scale(0.9);
+    border-radius: 100%;
+    height: 100%;
+    width: 50%;
+}
+
+
+
+.Lever_On{
+    position:relative;
+    animation-name: slide_on;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.Lever_Off{
+    position:relative;
+    animation-name: slide_off;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+#night_shift.ON{
+    animation-name: background_change;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.night_shift_on{
+    animation-name: background_change_page_on;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    
+}
+.night_shift_off{
+    animation-name: background_change_page_off;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+@media(max-width: 1000px){
+    #container{
+        width: 50%;
+    }
+}
+
+@keyframes slide_on {
+    from{ right: 0px;}
+    to{ right: -40px;}
+}
+@keyframes slide_off {
+    from{ right: -40px;}
+    to{ right: 0px;}
+}
+
+@keyframes background_change_button{
+    from{background-color: rgb(255, 255, 255);}
+    to{background-color: rgb(0, 0, 0);}  
+}
+
+@keyframes background_change_page_on{
+    from{background-color: rgb(0, 78, 146);}
+    to{background-color: rgb(0, 30, 41);}  
+}
+@keyframes background_change_page_off{
+    from{background-color: rgb(0, 30, 41);}  
+    to{background-color: rgb(0, 78, 146);}
+}
+
+

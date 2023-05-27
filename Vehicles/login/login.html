@@ -1,0 +1,42 @@
+<html>
+    <link rel="stylesheet" href= "log_in_ctrl.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost/Vehicles/homepage/images/gear_black.png" />
+    <script src="checksession.js" defer="true"></script>
+    <script src="estetica_login.js" defer="true"></script>
+    <script src="log_in_ctrl.js" defer="true"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Login </title>
+    <body >
+        
+
+    <div id='container'>
+        <h1>Pagina di Login</h1>
+        <form name= 'login'> 
+            <label id="username">
+                <div id="username_tag">Nome Utente:</div> 
+                <input type='text', name='username'>
+                <span name='username'></span>
+            </label>
+            <label id="password">
+                <div id="password_tag">Password:</div> 
+                <input type='password', name='password'>
+                <span name='password'></span>
+            </label>
+            <div id="error_box_container"></div>
+            <br><label id="register"><span>Non possiedi un Account? <a href="../register/register.html">Registrati</a></span></label>
+            <label ><span>Homepage: <a href="../homepage/homepage.html">Home</a></span></label>
+            <label id="label_button">
+                <input type="submit" id = "button"   style="cursor:pointer;">
+            </label> 
+        </form>
+    </div>
+    <div id="night_shift" class="OFF">
+        <div id="night_shift_lever" ></div>
+    </div>
+
+    </body>
+
+
+
+</html>
+

@@ -1,0 +1,54 @@
+<html>
+    <link rel="stylesheet" href= "register.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost/Vehicles/homepage/images/gear_black.png" />
+    <script src='register.js' defer='true'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Register </title>
+    <body>
+        
+        <div id='container'>
+            <h1>Registrazione</h1>
+            <form name= 'login'> 
+                <label id="name">
+                    <div id="name_tag">Nome:</div> 
+                    <input type='text', name='name'>
+                    <span name='name' id="error_message"></span>
+                </label>
+                <label id="surname">
+                    <div id="surname_tag">Cognome:</div> 
+                    <input type='text', name='surname'>
+                    <span name='surname' id="error_message"></span>
+                </label>
+                <label id="username">
+                    <div id="username_tag">Nome Utente:</div> 
+                    <input type='text', name='username'>
+                    <span name='username' id="error_message"></span>
+                </label>
+                <label id="e-mail">
+                    <div id="email_tag">E-mail:</div> 
+                    <input type='text', name='mail'>
+                    <span name='e-mail' id="error_message"></span>
+                </label>
+                <label id="password">
+                    <div id="password_tag">Password:</div> 
+                    <input type='password', name='password'>
+                    <span name='password' id="error_message"></span>
+                </label>
+                <div id="check_box_container"></div>
+                <br><label><span>Possiedo gia' un Account: <a href="../login/login.html">Login</a></span></label>
+                <label ><span>Homepage: <a href="../homepage/homepage.html">Home</a></span></label>
+
+                <label id="label_button">
+                    <input type="submit" id = "button"  style="cursor:pointer;">
+                </label> 
+            </form>
+        </div>
+        <div id="night_shift" class="OFF">
+            <div id="night_shift_lever"></div>
+        </div>
+
+    </body>
+
+
+
+</html>

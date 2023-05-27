@@ -1,0 +1,334 @@
+#every_container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#search_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    background-color: rebeccapurple;
+    height: 100vh;
+    width: 250px;
+    padding: 30px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    margin: 0px;
+}
+
+.error_message_container{
+    background-color: rgb(255, 0, 0);
+    width: 250px;
+    height: 60px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+#error_message{
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5px;
+    height: 20px;
+}
+
+.invisible, #invisible{
+    display:none;
+}
+#label_ricerca{
+    width: 250px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ricerca{
+    background-color: rgb(238, 207,247);
+    height: 40px;
+    width: 100%;
+
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 0px;
+    border-color: white;
+}
+
+#ricerca:focus{
+    outline: none;
+}
+
+.bold{
+    font-family: sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rebeccapurple
+}
+
+.bold span{
+    font-weight:100;
+    color:  cornflowerblue;
+}
+
+#label_search_button{
+    width: 250px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#search_button{
+    background-color: rgb(206, 125, 203);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 0px;
+    height: 50px;
+    width: 100%;
+
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(24, 24, 24);
+}
+
+#search_button:hover{
+    background-color: rgb(255, 151, 252);
+
+}
+
+
+#search_bar{
+    height: 50px;
+    width: 50%;
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#ricerca{
+    margin-left: 20px;
+}
+
+#ricerca_button{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    margin-left: 10px;
+    border-radius: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    box-shadow: 0px 0px 8px black;
+    outline: none;
+}
+
+#bikes_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: fit-content;
+    width: 100%;
+}
+
+#bikes_search_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: fit-content;
+    width: 100%;
+}
+
+.feature_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+}
+
+.container_bike{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 8px black;
+    margin-top: 20px;
+}
+
+h2{
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+}
+
+#heart_image{
+    margin-left: 60px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.content_container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.side_container{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    height: 100%;
+}
+
+            /*SEARCH BUTTON*/
+.night_shift_on #ricerca_button{
+    animation-name: night_shift_OFF_ON_search;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.night_shift_off #ricerca_button{
+    animation-name: night_shift_ON_OFF_search;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+            /*TITLE*/
+.container_bike.bike_night_shift_ON h2{
+    animation-name: night_shift_OFF_ON_title;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.container_bike.bike_night_shift_OFF h2{
+    animation-name: night_shift_ON_OFF_title;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+            /*CONTAINER*/
+.container_bike.bike_night_shift_ON{
+    animation-name: night_shift_OFF_ON;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.container_bike.bike_night_shift_OFF{
+    animation-name: night_shift_ON_OFF;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@media (max-width: 870px){
+    .side_container{
+        width: 100%;
+    }
+
+    .content_container{
+        flex-direction: column;
+    }
+}
+
+@keyframes night_shift_OFF_ON {
+    from {  background-color: white;
+        box-shadow: 4px 4px 8px black; }
+    to{ background-color: black;
+        box-shadow: 4px 4px 8px white; }
+}
+
+@keyframes night_shift_ON_OFF {
+    from {  background-color: black;
+        box-shadow: 4px 4px 8px white; }
+        to{ background-color: white;
+            box-shadow: 4px 4px 8px black; }
+}
+
+
+@keyframes night_shift_OFF_ON_title {
+    from {  color: black;}
+    to{ color: white;}
+}
+
+@keyframes night_shift_ON_OFF_title {
+    from {  color: white;}
+    to{ color: black;}
+}
+
+
+@keyframes night_shift_OFF_ON_search {
+    from { box-shadow: 0px 0px 8px black; }
+    to{ box-shadow: 0px 0px 8px white; }
+}
+
+@keyframes night_shift_ON_OFF_search {
+    from {  box-shadow: 0px 0px 8px white; }
+        to{ box-shadow: 0px 0px 8px black; }
+}
+
+.notClickable, #search_button.notClickable{
+    background-color: gray;
+    cursor: no-drop;
+}
+
+
+@media (max-width: 870px){
+    #every_container{
+        flex-direction: column;
+    }
+
+    #search_container{
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+
+    #search_bar{
+        width: 95%;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+
+
+}
+
+
+

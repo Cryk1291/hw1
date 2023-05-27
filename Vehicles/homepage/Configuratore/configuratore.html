@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <script src="../header.js" defer="true"></script>
+    <script src="configuratore.js" defer="false"></script>
+    <link rel="stylesheet" href="../homepage_header.css" />
+    <link rel="stylesheet" href="configuratore.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Configuratore</title>
+  </head>
+
+  <body>
+    <div id = "Loading_Layout" class="disappear">
+      <div> Loading new Images:</div>
+      <div> Waiting for the Server...</div><br>
+      <div> (For the first time opening the car</div>
+      <div> it can take up to 30 seconds)</div><br>
+      <div id = dynamic_loading></div>
+    </div>
+    <div id="container">
+      <div id="header">
+        <div id="menu" name="selection_menu">
+          <a href="../homepage.html">
+           <div id="header_home" class="header selection">Homepage</div>
+          </a>
+          <a href="http://localhost/Vehicles/homepage/motorbike/motorbike.html">
+            <div id="header_motorbike" class ='header selection'>Motorbike</div>
+        </a>
+        </div>
+        <img src="../images/logo.png" id = "logo">
+        <div id="profile_setting_selection">
+          <div id="header_profile" class="header selection">
+            <name></name>
+            <div id="header_profile_access" class="disappear"></div>
+          </div>
+          
+          <img
+            src="../images/gear_white.png"
+            id="gear_black"
+            class="gear_image"
+          />
+        </div>
+      </div>
+
+      <div class="slide_header_container">
+        <h1 id="car_title"><span id='car_title_span'></span></h1>
+          <div id="header_container">
+            <img
+              src="../images/arrow_dx.png"
+              class="change_photo"
+              id="previous_photo"
+            />
+            <div id="foto_container">
+            </div>
+            <img
+              src="../images/arrow_sx.png"
+              class="change_photo"
+              id="next_photo"
+            />
+          </div>
+      </div>
+      <div class="background_features_container">
+        <div id="add_to_favourite_container">
+          <div id="add_to_favourite"> 
+            <span id="span_favourite">Aggiungi ai preferiti: </span> 
+            <img src = "../images/heart_empty.png"
+                  id = "heart"
+            />
+          </div>
+        </div>
+        <div class="features_container">
+          <div id="color_setting">
+            <div id = "choose_color">
+              <span>Scegli il Colore:  </span>
+              <div id="color_name_changing"> Gray</div> 
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="gear_setting_container" class="close disappear">
+      <div class="gear_menu_element" id="gear_night_shift_element">
+        <span>Dark Mode: </span>
+        <div id="night_shift" class="OFF">
+          <div id="night_shift_lever"></div>
+        </div>
+      </div>
+      <a href="http://localhost/Vehicles/homepage/profile/profile.html">
+        <div class = "gear_menu_element" id="gear_profile_element">
+            <span>Profile: </span>
+            <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+        </div>
+    </a>
+    <a href="http://localhost/Vehicles/login/login.html">
+        <div class = "gear_menu_element" id="gear_login_element">
+            <span>Login: </span>
+            <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+        </div>
+    </a>
+    <a href="http://localhost/Vehicles/register/register.html">
+        <div class = "gear_menu_element" id="gear_register_element">
+            <span>Register: </span>
+            <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+        </div>
+    </a>
+    <a href="http://localhost/Vehicles/homepage/homepage.html">
+      <div class = "gear_menu_element" id="gear_homepage_element">
+          <span>Homepage: </span>
+          <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+      </div>
+  </a>
+  <a href="http://localhost/Vehicles/homepage/motorbike/motorbike.html">
+      <div class = "gear_menu_element" id="gear_motorbike_element">
+          <span>Motorbike: </span>
+          <img src = "http://localhost/Vehicles/homepage/images/arrow_sx.png" id="arrow_sx_img">
+      </div>
+  </a>
+    </div>
+  </body>
+</html>

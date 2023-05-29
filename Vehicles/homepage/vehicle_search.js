@@ -62,8 +62,8 @@ function search_vehicle(event){
         else
         {  
             fetch(url_api)
-            .then(async (response) => {return response.json()})
-            .then(async (object) => 
+            .then((response) => {return response.json()})
+            .then((object) => 
             {   
                 if(object){
                     if(object.Results.length == 0)          /*SE HO INSERITO SOLO LA MARCA E RICEVO ERRORE*/
